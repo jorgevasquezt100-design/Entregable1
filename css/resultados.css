@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #010A04;
+    color: #E0FFE8;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+#resultados {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+h2 {
+    color: #39E87A;
+      display: flex;
+    flex-direction: column;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+h3 {
+    color: #4DF4FF;
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    color: #2D6E4A;
+}
+
+
+.contenedor-resultados {
+    display: grid;
+    gap: 20px;
+}
+
+
+.card {
+    background-color: #071310;
+    border: 1px solid #0F2D1A;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.card p {
+    color: #2D6E4A;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.btn-enviar {
+    background-color: rgb(0, 51, 255);
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .contenedor-resultados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .contenedor-resultados article {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        background-color: #071310;
+        border: 1px solid #0F2D1A;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .contenedor-resultados {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .contenedor-resultados article {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        background-color: #071310;
+        border: 1px solid #0F2D1A;
+        border-radius: 12px;
+        padding: 25px;
+
+        transition: 0.3s;
+    }
+
+   
+    .contenedor-resultados article:hover {
+        transform: translateY(-5px);
+        border-color: #39E87A;
+    }
+
+
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/imagenes.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+
+        <img class="logo" src="../img/logo.jpg" alt="">
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./equipos.html">Equipos de trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./resultados.html">Resultados de investigación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos academicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./imagenes.html">Galeria de imagenes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h2>Galería de Imágenes</h2>
+
+    <div class="grid-galeria" >
+
+        <a href="../img/galeria1.webp" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria1.webp" alt="reunion">
+        </a>
+        <a href="../img/galeria2.webp" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria2.webp" alt="ponencia">
+        </a>
+        <a href="../img/galeria3.jpeg" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria3.jpeg" alt="investigando">
+        </a>
+        <a href="../img/galeria4.jpeg" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria4.jpeg" alt="programador">
+        </a>
+        <a href="../img/galeria5.webp" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria5.webp" alt="taller">
+        </a>
+        <a href="../img/galeria6.webp" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria6.webp" alt="taller">
+        </a>
+        <a href="../img/galeria7.webp" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria7.webp" alt="enseñando">
+        </a>
+        <a href="../img/galeria8.webp" data-lightbox="fotos" data-aos="zoom-in">
+            <img src="../img/galeria8.webp" alt="integrantes">
+        </a>
+    </div>
+
+    <footer data-aos="zoom-in">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingrese su nombre</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingrese su email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Escribenos</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button class="btn-enviar">Enviar</button>
+        </div>
+        <p>Universidad@udla.edu.co
+            <br> Carrera 7 # 40-62, Bogotá, Colombia
+        </p>
+    </footer>
+    <script>
+        function ajustarPadding() {
+            const header = document.querySelector("header");
+            const altura = header.offsetHeight;
+            document.body.style.paddingTop = altura + "px";
+        }
+
+        window.addEventListener("load", ajustarPadding);
+        window.addEventListener("resize", ajustarPadding);
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            mirror: true
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
